@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Text Extractor Test</title>
+    <script src="jquery-3.6.3.min.js"></script>
+    <script src="compromise.min.js"></script>
+    <script src="popup.js"></script>
+    <script src="saveinputs.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        max-width: 1500px;
+      }
+
+      h1 {
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      form {
+        margin: 0 auto;
+        width: 90%;
+        max-width: 1500px;
+      }
+
+      label {
+        display: block;
+        font-size: 18px;
+        margin-top: 20px;
+      }
+
+      input[type="text"] {
+        font-size: 18px;
+        padding: 5px;
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-top: 5px;
+      }
+
+      #textInput {
+        font-size: 18px;
+        padding: 5px;
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-top: 5px;
+        height: 100px;
+        overflow-y: scroll;
+      }
+
+      input[type="button"] {
+        font-size: 18px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        background-color: #4CAF50;
+        color: white;
+        margin-top: 20px;
+        cursor: pointer;
+      }
+
+      input[type="button"]:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body style="width: 300px;">
+    <h1>Test Extension</h1>
+    <form>
+      <label for="urlInput">Enter URL:</label>
+      <input type="text" id="urlInput" name="urlInput">
+      <label for="textInput">Enter Text:</label>
+      <div id="output" contentEditable="true"></div>
+      <input type="button" id="extractButton" value="Link Text">
+    </form>
+  </body>
+</html>
